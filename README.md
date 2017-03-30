@@ -1,1 +1,2 @@
 # alfredChecker
+# OSX
