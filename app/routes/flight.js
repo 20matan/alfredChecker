@@ -35,7 +35,8 @@ router.get('/:pnr/:lastname', (req, res) => {
       if (flight_tickets.length > 0){
         isFlightGood = checkFlightsArray(flight_tickets);
       }
-      if (unticketed_flights.length > 0){
+      // keep checking if it is still good
+      if (isFlightGood && unticketed_flights.length > 0){
         isFlightGood = checkFlightsArray(unticketed_flights);
       }
       res.send({isFlightGood})
