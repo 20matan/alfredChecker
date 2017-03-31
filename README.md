@@ -1,2 +1,1 @@
-# alfredChecker
-# OSX
+# team 25
